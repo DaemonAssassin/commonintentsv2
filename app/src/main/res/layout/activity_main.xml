@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_show_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Map"
+        app:layout_constraintEnd_toStartOf="@+id/btn_play_media"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_play_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music or Video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_show_map"
+        app:layout_constraintTop_toTopOf="@+id/btn_show_map" />
+
+    <Button
+        android:id="@+id/btn_create_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Create Note"
+        app:layout_constraintEnd_toEndOf="@+id/btn_show_map"
+        app:layout_constraintStart_toStartOf="@+id/btn_show_map"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_map" />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Create Call"
+        app:layout_constraintEnd_toEndOf="@+id/btn_play_media"
+        app:layout_constraintStart_toStartOf="@+id/btn_play_media"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play_media" />
+
+    <Button
+        android:id="@+id/btn_open_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Open Settings"
+        app:layout_constraintEnd_toEndOf="@+id/btn_show_map"
+        app:layout_constraintStart_toStartOf="@+id/btn_show_map"
+        app:layout_constraintTop_toBottomOf="@+id/btn_create_note" />
+
+    <Button
+        android:id="@+id/btn_take_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Take Video N"
+        app:layout_constraintEnd_toEndOf="@+id/btn_call"
+        app:layout_constraintStart_toStartOf="@+id/btn_call"
+        app:layout_constraintTop_toBottomOf="@+id/btn_call" />
+
+    <Button
+        android:id="@+id/btn_take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Take Photo N"
+        app:layout_constraintEnd_toEndOf="@+id/btn_show_map"
+        app:layout_constraintStart_toStartOf="@+id/btn_show_map"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_settings" />
+
+    <ImageView
+        android:id="@+id/iv_result_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
